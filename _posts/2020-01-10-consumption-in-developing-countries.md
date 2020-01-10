@@ -2,6 +2,7 @@
 layout: post
 title: Consumption in Developing Countries
 subtitle: Top five categories of products on which people spend the most
+image: /img/food.jpg
 bigimg: /img/food.jpg
 ---
 
