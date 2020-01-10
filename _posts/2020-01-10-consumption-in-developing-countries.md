@@ -1,7 +1,7 @@
 ---
 layout: post
-title: [Consumption in Developing Countries](https://medium.com/@doina.jitoreanu/consumption-in-developing-countries-ea98dbb5795d)
-subtitle: [Top five categories of products on which people spend the most](https://medium.com/@doina.jitoreanu/consumption-in-developing-countries-ea98dbb5795d)
+title: Consumption in Developing Countries
+subtitle: Top five categories of products on which people spend the most
 image: /img/food.jpg
 ---
 
