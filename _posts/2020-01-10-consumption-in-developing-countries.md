@@ -25,11 +25,11 @@ Each country has a certain per capita expenditure for 23 categories of products 
 
 First, let's take a look at the overall expenditures for all the products. People from more than half of the developing countries spend less than $1,000 a year on goods and services, especially in Sub-Saharan Africa and South Asia. People from Bosnia and Herzegovina spend the most on goods and services ($4,841 per person), followed by those from Brazil ($4,279), Latvia ($4,133), Russia ($3,916), and Montenegro ($3,610). People from Madagascar spend the less ($149 per person) on goods and services, followed by those from Burundi ($174), Democratic Republic of Congo ($217), Tanzania ($238), and Nicaragua ($248).
 
-(choropleth map here)
+![Global_pce](/img/global_pce.PNG){: .center-block :}
 
 People from all the six regions spend most of their income on almost the same categories of products and services. For example, the housing and the other products and services are on the top five categories on which people spend the most. The category "housing" covers products and services such as actual and imputed rentals for housing, maintenance and repair of the dwelling, major household appliances, small tools, and miscellaneous accessories. In the "other" category are included products and services like furniture, carpets, household textiles, major tools and equipment, postal services, major durables for outdoor and indoor recreation, garden and pets, veterinary, cultural services, hairdressing salons and personal grooming establishments, jewelry, clocks and watches, social protection or tobacco. 
 
-(second graph here)
+![Top](/img/top_prod.PNG){: .center-block :}
 
 However, the expenses for vehicles and other transport services are on top only in Latin America and the Caribbean comparing to the other regions. In this category are included motor cars, motorcycles, bicycles, maintenance and repair of personal transport equipment, as well as passenger transport in different ways (railway, road, air, sea and inland waterway). South Asia is the only region that has on top the expenses for other food (oil, fats, sugar, jams, marmalades, honey, confectionery, chocolate, ice cream, spices, and seasonings). Eastern Europa and Central Asia differ from the other regions by having the dairy on top five products on which people spend. Other top categories of products for the analyzed regions are grains, fruits and vegetables, meat and fish.
 
