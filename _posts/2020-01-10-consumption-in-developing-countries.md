@@ -21,7 +21,7 @@ The indicator analyzed in this article is Per capita consumption 2010 for countr
 The original database presents the data at the national level by country, category of products, and consumption segment. World Bank categorized the households in four consumption segments based on global income distribution data, but this analysis is focused on the overall consumption, ignoring the defined segments. You can see details about cleaning and pre-processing the database, including code and comments of the analysis, in my Colab Notebook (LINK).
 Each country has a certain per capita expenditure for 23 categories of products or services.
 
-(img_categories here)
+![Categories](/img/img_categories.PNG){: .center-block :}
 
 First, let's take a look at the overall expenditures for all the products. People from more than half of the developing countries spend less than $1,000 a year on goods and services, especially in Sub-Saharan Africa and South Asia. People from Bosnia and Herzegovina spend the most on goods and services ($4,841 per person), followed by those from Brazil ($4,279), Latvia ($4,133), Russia ($3,916), and Montenegro ($3,610). People from Madagascar spend the less ($149 per person) on goods and services, followed by those from Burundi ($174), Democratic Republic of Congo ($217), Tanzania ($238), and Nicaragua ($248).
 
