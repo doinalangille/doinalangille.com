@@ -25,7 +25,8 @@ The original database presents the data at the national level by country, catego
 df = pd.read_csv("https://raw.githubusercontent.com/doinalangille/DS-Unit-1-Sprint-5-Data-Storytelling-Blog-Post/master/consumption_per_capita.txt")
 df.head()
 ```
-[PICTURE]
+![Pce_head](/img/head_pce.PNG)
+
 The column names have different formats, so it's always a good idea to rename them, to work more efficiently.
 ```
 df.rename(columns={'Country_Hide': 'country_hide', 
@@ -50,13 +51,13 @@ Another important step in pre-processing data is to check the types of the varia
 # Check the types of the variables
 df.dtypes
 ```
-[PICTURE]
-The variable pce_usd should be float, but it is a string in our database. I also noticed that the values of this variable have a comma as thousand separator, so we have to delete comma before converting the string to float.
+![Pce_dtypes](/img/pce_dtypes.PNG)
+The variable `pce_usd` should be float, but it is a string in our database. I also noticed that the values of this variable have a comma as thousand separator, so we have to delete comma before converting the string to float.
 ```
 # Take a look at the longest string of this variable
 max(df['pce_usd'], key=len)
 ```
-[PICTURE]
+![separator](/img/pce_longest.PNG)
 ```
 # Delete comma before converting to numeric
 df['pce_usd'].replace(regex=True,inplace=True,to_replace=r',',
