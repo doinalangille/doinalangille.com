@@ -79,7 +79,7 @@ df_AggCat = df[df['sector_cat_prod']=='All categories']
 df_ByCat = df[df['sector_cat_prod']!='All categories']
 ```
 
-<span style="background-color:yellow">You can see more details about cleaning and pre-processing the database, including code and comments of the analysis, in my [Colab Notebook](https://github.com/doinalangille/DS-Unit-1-Sprint-5-Data-Storytelling-Blog-Post/blob/master/Consumption_in_developing_countries.ipynb).</span>
+*You can see more details about cleaning and pre-processing the database, including code and comments of the analysis, in my [Colab Notebook](https://github.com/doinalangille/DS-Unit-1-Sprint-5-Data-Storytelling-Blog-Post/blob/master/Consumption_in_developing_countries.ipynb).*
 
 Let's take a look at the overall expenditures for all the products, using a choropleth map.
 ```
