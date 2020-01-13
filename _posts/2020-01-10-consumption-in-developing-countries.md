@@ -52,6 +52,7 @@ Another important step in pre-processing data is to check the types of the varia
 df.dtypes
 ```
 ![Pce_dtypes](/img/pce_dtypes.PNG)
+
 The variable `pce_usd` should be float, but it is a string in our database. I also noticed that the values of this variable have a comma as thousand separator, so we have to delete comma before converting the string to float.
 ```
 # Take a look at the longest string of this variable
@@ -77,7 +78,8 @@ df_AggCat = df[df['sector_cat_prod']=='All categories']
 # Dataframe for detailed categories
 df_ByCat = df[df['sector_cat_prod']!='All categories']
 ```
-You can see more details about cleaning and pre-processing the database, including code and comments of the analysis, in my [Colab Notebook](https://github.com/doinalangille/DS-Unit-1-Sprint-5-Data-Storytelling-Blog-Post/blob/master/Consumption_in_developing_countries.ipynb).
+
+<span style="background-color:yellow">You can see more details about cleaning and pre-processing the database, including code and comments of the analysis, in my [Colab Notebook](https://github.com/doinalangille/DS-Unit-1-Sprint-5-Data-Storytelling-Blog-Post/blob/master/Consumption_in_developing_countries.ipynb).</span>
 
 Let's take a look at the overall expenditures for all the products, using a choropleth map.
 ```
@@ -97,6 +99,7 @@ People from more than half of the developing countries spend less than $1,000 a 
 
 Each country has a certain per capita expenditure for 23 categories of products or services.
 ![Categories](/img/img_categories.PNG){: .center-block :}
+
 To see the top 5 categories of products on which people from developing countries spend the most, I created subplots for every region. Skip the code snippet if you are not interested in following the code behind the visualization.
 ```
 # Get the data for each region
