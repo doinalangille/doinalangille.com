@@ -11,10 +11,7 @@ A lot of businesses are online in the technology era, and it is understandable w
 
 # [Make predictions here!](https://online-shoppers-intention.herokuapp.com/)
 
-# The process
-
-### Overview
-
+### The process
 This project uses the [Online Shoppers Purchasing Intention 
 Dataset](https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset#) from UCI. According to the Dataset 
 description, it was formed so that each session would belong to a different user in a 1-year period to avoid any 
@@ -33,7 +30,6 @@ Because the classes are imbalanced, the accuracy is not the best evaluation metr
 Operating Characteristic Curve (ROC AUC) as an evaluation metric.
 
 ### Data Processing
-
 The dataset had the following problems to be solved:
 1. 125 rows (1.0%) were duplicate; 
 2. The numerical variables contained outliers;
@@ -42,7 +38,6 @@ After cleaning and wrangling data, the dataset was split into train, validate, a
 more models before deciding on which to use.
 
 ### First model: Logistic Regression
-
 First, I tried a linear model for classification, the logistic regression, using `LogisticRegressionCV()`. The ROC AUC score for
 this model was 0.8827, and the most important features were highlighted: Page values, Exit rates, Month, number of visits on Product
 related page, and the time spent on Product related page.
@@ -82,13 +77,11 @@ in the model. Please find below the partial dependence plot for it.
 
 ![PDP_page_value](/img/online-shopper/pdp_page_values.png)
 
- ### Summary
- 
+### Summary
 * This app predicts the intention of online shoppers
 * The best model is Random Forest with the following arguments: 
 `RandomForestClassifier(max_depth=5, max_features=0.7164353684966558, n_estimators=460, random_state=42, n_jobs=-1)`
 * The test score of 0.93 beats the baseline score
 
 ### References:
-
 Sakar, C.O., Polat, S.O., Katircioglu, M. et al. Neural Comput & Applic (2019) 31: 6893. https://doi.org/10.1007/s00521-018-3523-0
