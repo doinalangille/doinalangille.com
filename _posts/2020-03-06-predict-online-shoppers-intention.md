@@ -26,7 +26,7 @@ boolean variable describing either the user made a purchase or not.
 The majority class of the database is the False value; this negative class appearing with a frequency of 84.5%.
 Only 15.5% of users ended with an online purchase. 
 
-![Baseline](/img/baseline.png)
+![Baseline](/img/online-shopper/baseline.png)
 
 For this project, it is essential to correctly predict the positive class, whose frequency is smaller than the negative class. 
 Because the classes are imbalanced, the accuracy is not the best evaluation metric, so I used the Area Under the Receiver 
@@ -47,40 +47,40 @@ First, I tried a linear model for classification, the logistic regression, using
 this model was 0.8827, and the most important features were highlighted: Page values, Exit rates, Month, number of visits on Product
 related page, and the time spent on Product related page.
 
-![Logistic](/img/logistic.png)
+![Logistic](/img/online-shopper/logistic.png)
 
 ### Random Forest Classifier
 For the second model, I used `RandomForestClassifier` with `n_estimators=100`, and I received a validation ROC AUC score equals
 to 0.9179.
 To improve this model, I optimized 3+ hyperparameters by trying 10+ candidates.
 
-![Logistic](/img/random_forest.png)
+![Logistic](/img/online-shopper/random_forest.png)
 
 Using the best parameters of the model, I increased the validation ROC AUC score up to 0.9263.
 
-![ROC](/img/roc.png)
+![ROC](/img/online-shopper/roc.png)
 
 I tried to use xgboost, but it didn't improve the model performance, so I decided to choose the RandomForestClassifier model
 with the best parameters: `max_depth=5`, `max_features=0.7164353684966558`, `n_estimators=460`. The most important features 
 highlighted by this model are the Page values, Bounce rates, Month, Exit rates, the number of visits on the product related page
 and on administrative page, as well as the time spent on these pages.
 
-![Top_10](/img/top10.png)
+![Top_10](/img/online-shopper/top10.png)
 
 Before deciding on the most important features, I used the `eli5` library to find the permutation importances.
 
-![Permutation](/img/permutation.png)
+![Permutation](/img/online-shopper/permutation.png)
 
 Finally, I decided to use in the model only the most important features, because it is easier to interpret and to make 
 predictions by giving different values as input for fewer variables.
 
-![Test_score](/img/test_score.png)
+![Test_score](/img/online-shopper/test_score.png)
 
 Even if the validation score is lower than the score using all 18 features, the test score is equal to 0.9309, giving me enough
 confidence to use this model to predict the intention of online shoppers. The value of the page is the most important feature
 in the model. Please find below the partial dependence plot for it.
 
-![PDP_page_value](/img/pdp_page_values.png)
+![PDP_page_value](/img/online-shopper/pdp_page_values.png)
 
  ### Summary
  
