@@ -23,7 +23,7 @@ boolean variable describing either the user made a purchase or not.
 The majority class of the database is the False value; this negative class appearing with a frequency of 84.5%.
 Only 15.5% of users ended with an online purchase. 
 
-![Baseline](/img/online-shopper/baseline.PNG)
+![Baseline](/img/online-shopper/baseline.PNG){: .center-block :}
 
 For this project, it is essential to correctly predict the positive class, whose frequency is smaller than the negative class. 
 Because the classes are imbalanced, the accuracy is not the best evaluation metric, so I used the Area Under the Receiver 
@@ -31,9 +31,10 @@ Operating Characteristic Curve (ROC AUC) as an evaluation metric.
 
 ### Data Processing
 The dataset had the following problems to be solved:
-1. 125 rows (1.0%) were duplicate; 
-2. The numerical variables contained outliers;
-3. Some categorical variables with numeric values were integer, and we need them strings. 
+* 125 rows (1.0%) were duplicate; 
+* The numerical variables contained outliers;
+* Some categorical variables with numeric values were integer, and we need them strings. 
+
 After cleaning and wrangling data, the dataset was split into train, validate, and test datasets using the random split. I tried
 more models before deciding on which to use.
 
@@ -49,11 +50,11 @@ For the second model, I used `RandomForestClassifier` with `n_estimators=100`, a
 to 0.9179.
 To improve this model, I optimized 3+ hyperparameters by trying 10+ candidates.
 
-![Logistic](/img/online-shopper/random_forest.PNG)
+![Logistic](/img/online-shopper/random_forest.PNG){: .center-block :}
 
 Using the best parameters of the model, I increased the validation ROC AUC score up to 0.9263.
 
-![ROC](/img/online-shopper/roc.PNG)
+![ROC](/img/online-shopper/roc.PNG){: .center-block :}
 
 I tried to use xgboost, but it didn't improve the model performance, so I decided to choose the RandomForestClassifier model
 with the best parameters: `max_depth=5`, `max_features=0.7164353684966558`, `n_estimators=460`. The most important features 
@@ -64,7 +65,7 @@ and on administrative page, as well as the time spent on these pages.
 
 Before deciding on the most important features, I used the `eli5` library to find the permutation importances.
 
-![Permutation](/img/online-shopper/permutation.PNG)
+![Permutation](/img/online-shopper/permutation.PNG){: .center-block :}
 
 Finally, I decided to use in the model only the most important features, because it is easier to interpret and to make 
 predictions by giving different values as input for fewer variables.
@@ -82,6 +83,8 @@ in the model. Please find below the partial dependence plot for it.
 * The best model is Random Forest with the following arguments: 
 `RandomForestClassifier(max_depth=5, max_features=0.7164353684966558, n_estimators=460, random_state=42, n_jobs=-1)`
 * The test score of 0.93 beats the baseline score
+
+Please find [here](https://github.com/doinalangille/Online-shoppers-intention) the GitHub Repository for this project.
 
 ### References:
 Sakar, C.O., Polat, S.O., Katircioglu, M. et al. Neural Comput & Applic (2019) 31: 6893. [https://doi.org/10.1007/s00521-018-3523-0](https://doi.org/10.1007/s00521-018-3523-0)
