@@ -4,7 +4,7 @@
 title: Doina Langille
 
 # Short description of your site
-description: Data Science Student
+description: Data Scientist
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -73,7 +73,7 @@ social-network-links:
   github: doinalangille
 #  twitter: daattali
 #  reddit: yourname
-#  linkedin: doina-langille
+ linkedin: doina-langille
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
