@@ -4,4 +4,4 @@ title: About me
 subtitle: 
 ---
 
-My name is Doina Langille, and I am a Data Science Student, thirsty to learn methods and tools for working with data. I have a Bachelor's Degree in Statistics and Economic Forecasting, and a little bit of experience in data analysis. I love traveling, spending my spare time in nature, cooking, and talking about life and energies that surround us.
+My name is Doina Langille, and I help companies understand their clients and their processes by getting insights from their data. My major in Economic Statistics and Forecasting allows me to look at the data through a business approach besides the tech approach. My economics knowledge matches perfectly with my statistical experience. Thus, I can quickly discover patterns or a behavioral change in data. My goal is to help companies achieve their success by using one of their most valuable assets: data - the asset that never lies. 

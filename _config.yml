@@ -4,7 +4,7 @@
 title: Doina Langille
 
 # Short description of your site
-description: Data Science Student
+description: Data Scientist
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -67,13 +67,13 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: false
-#  email: "doina.jitoreanu@gmail.com"
+#  rss: false
+  email: doinalangille@gmail.com
 #  facebook: deanattali
   github: doinalangille
 #  twitter: daattali
 #  reddit: yourname
-#  linkedin: doina-jitoreanu
+  linkedin: doina-langille
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -87,13 +87,13 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: false
+  twitter: true
   facebook: false
-  linkedin: false
+  linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "doinalangille.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+# url-pretty: "doinalangille.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
