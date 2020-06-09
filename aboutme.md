@@ -4,7 +4,7 @@ title: About me
 subtitle: 
 ---
 
-<img align="left" src="img/IMG_1604.JPG" width="200">
+<img align="left" src="img/IMG_1604.JPG" width="180">
 <!-- ![alt text](img/IMG_1604.JPG "Doina Langille") -->
 My name is Doina Langille, and I help companies understand their clients and their processes by getting insights from their data. My major in Economic Statistics and Forecasting allows me to look at the data through a business approach besides the tech approach. My economics knowledge matches perfectly with my statistical experience. Thus, I can quickly discover patterns or a behavioral change in data. My goal is to help companies achieve their success by using one of their most valuable assets: data - the asset that never lies. 
 
@@ -17,7 +17,6 @@ My name is Doina Langille, and I help companies understand their clients and the
   <img src="img/skills/blueprism.jpg" width="100" />
   <img src="img/skills/eviews.png" width="100" />
   <img src="img/skills/my_sql.png" width="100" />
-  <img src="img/skills/oracle.png" width="100" />
   <img src="img/skills/postgres.png" width="100" />
   <img src="img/skills/spss.png" width="100" />
 </p>
