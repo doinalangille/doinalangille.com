@@ -11,12 +11,12 @@ My name is Doina Langille, and I help companies understand their clients and the
 # Skills
 
 <p float="left">
-  <img src="/img/skills/py.jpg" width="100" />
-  <img src="/img/skills/R.png" width="100" /> 
-  <img src="/img/skills/aws.jpg" width="100" />
-  <img src="/img/skills/blueprism.jpg" width="100" />
-  <img src="/img/skills/eviews.png" width="100" />
-  <img src="/img/skills/my_sql.png" width="100" />
-  <img src="/img/skills/postgres.png" width="100" />
-  <img src="/img/skills/spss.png" width="100" />
+  <img src="/img/skills/py.jpg" width="75" />
+  <img src="/img/skills/R.png" width="75" /> 
+  <img src="/img/skills/aws.jpg" width="75" />
+  <img src="/img/skills/blueprism.jpg" width="75" />
+  <img src="/img/skills/eviews.png" width="75" />
+  <img src="/img/skills/my_sql.png" width="75" />
+  <img src="/img/skills/postgres.png" width="75" />
+  <img src="/img/skills/spss.png" width="75" />
 </p>
