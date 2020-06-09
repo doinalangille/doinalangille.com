@@ -22,32 +22,37 @@ subtitle:
 
 <img align="left" src="/img/about_me/lambda.png" width="75"> 
 ### Lambda School, USA
+
 *2019-2020*
+
 Statistics ​|​ Predictive Modeling​ | ​Data Engineering​ | ​Machine Learning
 
-<img align="left" src="/img/about_me/feaa.png" width="75"> 
+<img align="left" src="/img/about_me/feea.png" width="75"> 
 ### Faculty of Economics and Business Administration​, Romania
 
-**Bachelor:** Economic Statistics and Forecasting, *2014-2017*
+*2014-2017*
+
+**Bachelor:** Economic Statistics and Forecasting
+
 Data Mining​ | ​Time Series Analysis​ | ​Statistics ​| ​Econometrics ​|​ Financial Econometrics | Databases
 
 # Experience
 
-**Consultant**, *KPMG Advisory​, Romania, January 2018 - June 2019*
-
+#### Consultant
+*KPMG Advisory​, Romania, January 2018 - June 2019*
 * Validated banks’ credit risk models
 
-**Statistician**, *ASCEDO International​, Romania, January - September 2017*
-
+#### Statistician
+*ASCEDO International​, Romania, January - September 2017*
 * Built questionnaires, wrangled the raw data, and analyzed surveys’ responses
 * Built reports to support strategies of development for schools and hospitals
 
-**Vice-President**, *The Club of Applied Statistics​, Romania, October 2015 - June 2016*
-
+#### Vice-President
+*The Club of Applied Statistics​, Romania, October 2015 - June 2016*
 * Managed a team of 20 students on performing research studies about the behavior of college students
 
 # Languages
 
 | :-: | :-: | :-: | :-: |
-| <img align="center" src="/img/about_me/usa.jpg" width="100"> | <img align="center" src="/img/about_me/fr.png" width="100"> | <img align="center" src="/img/about_me/ro.jpg" width="100"> | <img align="center" src="/img/about_me/ru.jpg" width="100">
-| English | French | Romanian | Russian |
+| <img align="center" src="/img/about_me/usa.jpg" width="100"> | <img align="center" src="/img/about_me/fr.png" width="75"> | <img align="center" src="/img/about_me/ro.jpg" width="100"> | <img align="center" src="/img/about_me/ru.jpg" width="75">
+| :English: | :French: | :Romanian: | :Russian: |
