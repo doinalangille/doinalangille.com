@@ -22,21 +22,17 @@ subtitle:
 
 <img align="left" src="/img/about_me/lambda.png" width="75"> 
 ### Lambda School, USA
-
 *2019-2020*
-
 Statistics ​|​ Predictive Modeling​ | ​Data Engineering​ | ​Machine Learning
 
 <img align="left" src="/img/about_me/feea.png" width="75"> 
 ### Faculty of Economics and Business Administration​, Romania
-
-*2014-2017*
-
 **Bachelor:** Economic Statistics and Forecasting
-
+*2014-2017*
 Data Mining​ | ​Time Series Analysis​ | ​Statistics ​| ​Econometrics ​|​ Financial Econometrics | Databases
 
 # Experience
+
 
 #### Consultant
 *KPMG Advisory​, Romania, January 2018 - June 2019*
@@ -55,4 +51,4 @@ Data Mining​ | ​Time Series Analysis​ | ​Statistics ​| ​Econometrics
 
 | :-: | :-: | :-: | :-: |
 | <img align="center" src="/img/about_me/usa.jpg" width="100"> | <img align="center" src="/img/about_me/fr.png" width="75"> | <img align="center" src="/img/about_me/ro.jpg" width="100"> | <img align="center" src="/img/about_me/ru.jpg" width="75">
-| :English: | :French: | :Romanian: | :Russian: |
+| English | French | Romanian | Russian |
