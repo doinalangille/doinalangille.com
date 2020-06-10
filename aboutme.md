@@ -24,8 +24,8 @@ subtitle:
 
 ---
 
-<img align="left" src="/img/about_me/lambda.png" width="75"> **Lambda School, USA**, *2019-2020*
-
+<img align="left" src="/img/about_me/lambda.png" width="75"> **Lambda School, USA**  
+*2019-2020*  
 Statistics \| Predictive Modeling \| Data Engineering \| Machine Learning
 
 <img align="left" src="/img/about_me/feea.png" width="75"> **Faculty of Economics and Business Administration​, Romania**, *2014-2017*  
