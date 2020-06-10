@@ -20,11 +20,9 @@ subtitle:
 
 # Education
 
-<img align="left" src="/img/about_me/lambda.png" width="75"> 
-##### Lambda School, USA
+<img align="left" src="/img/about_me/lambda.png" width="75"> **Lambda School, USA**\n
 *2019-2020*
-
-Skills: Statistics ​|​ Predictive Modeling​ | ​Data Engineering​ | ​Machine Learning
+Statistics \| Predictive Modeling /| ​Data Engineering​ | ​Machine Learning
 
 <img align="left" src="/img/about_me/feea.png" width="75"> 
 ##### Faculty of Economics and Business Administration​, Romania
