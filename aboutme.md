@@ -7,6 +7,8 @@ subtitle:
 
 # Skills
 
+---
+
 <p float="left">
   <img src="/img/about_me/py.jpg" width="75" />
   <img src="/img/about_me/R.png" width="75" /> 
@@ -20,6 +22,8 @@ subtitle:
 
 # Education
 
+---
+
 <img align="left" src="/img/about_me/lambda.png" width="75"> **Lambda School, USA**, *2019-2020*
 
 Statistics \| Predictive Modeling \| Data Engineering \| Machine Learning
@@ -30,6 +34,7 @@ Data Mining \| Time Series Analysis \| Statistics \| Econometrics \| Databases
 
 # Experience
 
+---
 
 **Consultant**  
 *KPMG Advisory, Romania, January 2018 - June 2019*  
@@ -38,8 +43,8 @@ Data Mining \| Time Series Analysis \| Statistics \| Econometrics \| Databases
 
 **Statistician**  
 *ASCEDO International​, Romania, January - September 2017*  
-*- Built questionnaires, wrangled the raw data, and analyzed surveys’ responses  
-- Built reports to support strategies of development for schools and hospitals*
+*- Built questionnaires, wrangled the raw data, and analyzed surveys’ responses*  
+*- Built reports to support strategies of development for schools and hospitals*
 
 
 **Vice-President**  
@@ -48,6 +53,8 @@ Data Mining \| Time Series Analysis \| Statistics \| Econometrics \| Databases
 
 
 # Languages
+
+---
 
 | :-: | :-: | :-: | :-: |
 | <img align="center" src="/img/about_me/usa.jpg" width="100"> | <img align="center" src="/img/about_me/fr.png" width="75"> | <img align="center" src="/img/about_me/ro.jpg" width="100"> | <img align="center" src="/img/about_me/ru.jpg" width="75">
