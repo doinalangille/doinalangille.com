@@ -20,35 +20,34 @@ subtitle:
 
 # Education
 
-<img align="left" src="/img/about_me/lambda.png" width="75"> **Lambda School, USA**
+<img align="left" src="/img/about_me/lambda.png" width="75"> **Lambda School, USA**, *2019-2020*
 
-*2019-2020*
+Statistics \| Predictive Modeling \| Data Engineering \| Machine Learning
 
-Statistics\|Predictive Modeling\|Data Engineering\|Machine Learning
+<img align="left" src="/img/about_me/feea.png" width="75"> **Faculty of Economics and Business Administration​, Romania**, *2014-2017*
 
-<img align="left" src="/img/about_me/feea.png" width="75"> 
-##### Faculty of Economics and Business Administration​, Romania
 **Bachelor:** Economic Statistics and Forecasting
 
-*2014-2017*
-
-Data Mining​ | ​Time Series Analysis​ | ​Statistics ​| ​Econometrics ​|​ Financial Econometrics | Databases
+Data Mining \| Time Series Analysis \| Statistics \| Econometrics \| Financial Econometrics \| Databases
 
 # Experience
 
 
 **Consultant**
+
 *KPMG Advisory​, Romania, January 2018 - June 2019*
 * Validated banks’ credit risk models
 
 
 **Statistician**
+
 *ASCEDO International​, Romania, January - September 2017*
 * Built questionnaires, wrangled the raw data, and analyzed surveys’ responses
 * Built reports to support strategies of development for schools and hospitals
 
 
 **Vice-President**
+
 *The Club of Applied Statistics​, Romania, October 2015 - June 2016*
 * Managed a team of 20 students on performing research studies about the behavior of college students
 
