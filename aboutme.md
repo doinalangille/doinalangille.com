@@ -28,27 +28,21 @@ Statistics \| Predictive Modeling \| Data Engineering \| Machine Learning
 
 **Bachelor:** Economic Statistics and Forecasting
 
-Data Mining \| Time Series Analysis \| Statistics \| Econometrics \| Financial Econometrics \| Databases
+Data Mining \| Time Series Analysis \| Statistics \| Econometrics \| Databases
 
 # Experience
 
 
-**Consultant**
-
-*KPMG Advisory​, Romania, January 2018 - June 2019*
+**Consultant**                                                                  *KPMG Advisory, Romania, January 2018 - June 2019*
 * Validated banks’ credit risk models
 
 
-**Statistician**
-
-*ASCEDO International​, Romania, January - September 2017*
+**Statistician**                                                        *ASCEDO International​, Romania, January - September 2017*
 * Built questionnaires, wrangled the raw data, and analyzed surveys’ responses
 * Built reports to support strategies of development for schools and hospitals
 
 
-**Vice-President**
-
-*The Club of Applied Statistics​, Romania, October 2015 - June 2016*
+**Vice-President**                                            *The Club of Applied Statistics​, Romania, October 2015 - June 2016*
 * Managed a team of 20 students on performing research studies about the behavior of college students
 
 
