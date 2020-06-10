@@ -21,15 +21,18 @@ subtitle:
 # Education
 
 <img align="left" src="/img/about_me/lambda.png" width="75"> 
-### Lambda School, USA
+##### Lambda School, USA
 *2019-2020*
-Statistics ​|​ Predictive Modeling​ | ​Data Engineering​ | ​Machine Learning
+
+Skills: Statistics ​|​ Predictive Modeling​ | ​Data Engineering​ | ​Machine Learning
 
 <img align="left" src="/img/about_me/feea.png" width="75"> 
-### Faculty of Economics and Business Administration​, Romania
+##### Faculty of Economics and Business Administration​, Romania
 **Bachelor:** Economic Statistics and Forecasting
+
 *2014-2017*
-Data Mining​ | ​Time Series Analysis​ | ​Statistics ​| ​Econometrics ​|​ Financial Econometrics | Databases
+
+Skills: Data Mining​ | ​Time Series Analysis​ | ​Statistics ​| ​Econometrics ​|​ Financial Econometrics | Databases
 
 # Experience
 
