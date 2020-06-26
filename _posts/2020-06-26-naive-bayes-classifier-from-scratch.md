@@ -9,6 +9,8 @@ comments: true
 
 The Naive Bayes algorithm is a classification technique based on Bayes Theorem. It assumes that the presence of a feature in a class is unrelated to the presence on any other feature. The algorithm rely on the posterior probability of the class given a predictor, as we can see in the following formula:
 
+[posterior_proba]https://bit.ly/2YBQuZs[/posterior_proba]
+
 $$P(c|x) = \frac{P(x|c)*P(c)}{P(x)}$$
 
 where:
@@ -22,7 +24,7 @@ The Naive Bayes classifier is easy to implement and performs well even with a sm
 
 The best way to understand a model is to build one from scratch. All the following methods are defined in a `GaussianNBClassifier` class. Let's have some fun!
 
-## 1. Instantiate the class
+### 1. Instantiate the class
 
 We will use only the `numpy` library for the arithmetical operations.
 
@@ -34,7 +36,8 @@ class GaussianNBClassifier:
         pass
 ```
 
-## 2. Separate classes
+
+### 2. Separate classes
 
 According to the Bayes Theorem, we need to know the class prior probability. To calculate it, we have to assign the feature values to the specific class. We can do this by separating the classes and saving them into a dictionnary.
 
@@ -50,7 +53,8 @@ def separate_classes(self, X, y):
     return separated_classes
 ```
 
-## 3. Summary of features
+
+### 3. Summary of features
 
 The likelihood, or the probability of predictor given the class, is assumed to be Gaussian, and is calculated based on mean and standard deviation *(see formula on step 4)*. Let's create a summary for each feature in the data set.
 
@@ -66,9 +70,12 @@ def summarize(self, X):
 * The `zip()` function here is an iterator of tuples where the values are paired together for each feature.
 * We choose to `yield` because we want to produce a sequence of values over which we will iterate later on, without explicitly saving the sequence in memory.
 
-## 4. Gaussian distribution function
+
+### 4. Gaussian distribution function
 
 The likelihood for features following a normal distribution is calculated using the Gaussian distribution function:
+
+[likelihood]https://bit.ly/38aClFN[/likelihood]
 
 $$P(x_i|y) = \frac{1}{\sqrt{2\pi\sigma^2}}*\exp{(-\frac{(x_i - \mu)^2}{2\sigma^2})}$$
 
@@ -78,7 +85,8 @@ def gauss_distribution_function(self, x, mean, stdev):
     return exponent / (np.sqrt(2*np.pi)*stdev)
 ```
 
-## 5. Train the model
+
+### 5. Train the model
 
 Training the model means telling the model to learn from a dataset. In Gaussian Bayes classifier, training means calculating the mean and standard deviation for each feature of each class. This will allow to calculate the likelihoods to be used for predictions.
 
@@ -96,13 +104,18 @@ def fit(self, X, y):
 
 First, we separate the classes in the training data set. Then, calculate the mean and standard deviation for each class, as well as the prior probability of the class: `len(feature_values)/len(X)`.
 
-## 6. Predict
+
+### 6. Predict
 
 To predict a class, we have to calculate the posterior probability for each one. The class with the greatest posterior probability will be the predicted class. The posterior probability is the joint probability divided by the marginal probability. The marginal probability, or the denominator, is the total joint probability of all classess, and will be the same across all classes. We need the class with the greatest posterior probability, which means it will be the one with greatest joint probability.
 
 **Joint probability**
 
-Joint probability is the numerator of the fraction used to calculate the posterior probability. Having multiple features, the joint probability is $$P(y)\prod_{i=1}^{n}P(x_i|y)$$.
+Joint probability is the numerator of the fraction used to calculate the posterior probability. Having multiple features, the joint probability is:
+
+[joint_proba]https://bit.ly/2YAIUhJ[/joint_proba]
+
+$$P(y)\prod_{i=1}^{n}P(x_i|y)$$.
 
 ```python
 joint_proba = {}
@@ -145,7 +158,8 @@ def predict(self, X):
                 feature = row[idx]
                 mean = features['summary'][idx]['mean']
                 stdev = features['summary'][idx]['stdev']
-                normal_proba = self.gauss_distribution_function(feature, mean, stdev)
+                normal_proba = self.gauss_distribution_function(feature, \
+                mean, stdev)
                 likelihood *= normal_proba
             prior_proba = features['prior_proba']
             joint_proba[class_name] = prior_proba * likelihood
@@ -154,7 +168,8 @@ def predict(self, X):
     return MAPs
 ```
 
-## 7. Calculate the accuracy
+
+### 7. Calculate the accuracy
 
 To test the performance of the model, we divide the number of correct predictions by the total number of predictions. This is also known as **accuracy**.
 
@@ -167,7 +182,8 @@ def accuracy(self, y_test, y_pred):
     return true_true / len(y_test)
 ```
 
-# GaussianNBClassifier vs. sklearn.GaussianNB
+
+### GaussianNBClassifier vs. sklearn GaussianNB
 
 Let's use the [UCI Wine data set](https://archive.ics.uci.edu/ml/datasets/Wine) to compare the performance of our model with the performance of GaussianNB model from scikit-learn.
 
@@ -181,6 +197,7 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 model.accuracy(y_test, y_pred)
 ```
+Output:
 ```
 GaussianNBClassifier accuracy: 0.972
 ```
@@ -196,6 +213,7 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 print ("Scikit-learn GaussianNB accuracy: {0:.3f}".format(accuracy_score(y_test, y_pred)))
 ```
+Output:
 ```
 Scikit-learn GaussianNB accuracy: 0.972
 ```
@@ -204,7 +222,8 @@ The accuracy of the models is the same, meaning that we implemented successful a
 
 Find [here](https://github.com/doinalangille/Naive-Bayes-from-scratch) the entire code and the notebook with the comparison of the algorithms.
 
-# References
+
+### References
 * [6 Easy Steps to Learn Naive Bayes Algorithm with codes in Python and R](https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/)
 * [HOW THE NAIVE BAYES CLASSIFIER WORKS IN MACHINE LEARNING](https://dataaspirant.com/2017/02/06/naive-bayes-classifier-machine-learning/)
 * [UCI Wine Data Set](https://archive.ics.uci.edu/ml/datasets/Wine)
