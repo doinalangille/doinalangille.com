@@ -20,11 +20,11 @@ where:
 The Naive Bayes classifier is easy to implement and performs well, even with a small training data set. It is one of the best fast solutions when it comes to predicting the class of the data. [Scikit-learn](https://scikit-learn.org/stable/modules/naive_bayes.html) offers different algorithms for various types of problems. One of them is the **Gaussian Naive Bayes**. It is used when the features are continuous variables, and it assumes that the features follow a Gaussian distribution. It is straightforward to apply the open-source model on data, but a good analyst has to understand how the model is built so that he can use it to the appropriate data.
 
 The best way to understand a model is to build one from scratch. All the following methods are defined in a `GaussianNBClassifier` class. Let's have some fun!  
-#  
+  
 
 ### 1. Instantiate the class
 
-We will use only the `numpy` library for the arithmetical operations.
+We will use only the `numpy` library for arithmetical operations.
 
 ```python
 import numpy as np
@@ -33,11 +33,11 @@ class GaussianNBClassifier:
     def __init__(self):
         pass
 ```  
-#  
+  
 
 ### 2. Separate classes
 
-According to the Bayes Theorem, we need to know the class prior probability. To calculate it, we have to assign the feature values to the specific class. We can do this by separating the classes and saving them into a dictionnary.
+According to the Bayes Theorem, we need to know the class prior probability. To calculate it, we have to assign the feature values to the specific class. We can do this by separating the classes and saving them into a dictionary.
 
 ```python
 def separate_classes(self, X, y):
@@ -50,11 +50,11 @@ def separate_classes(self, X, y):
         separated_classes[class_name].append(feature_values)
     return separated_classes
 ```  
-#  
+  
 
 ### 3. Summary of features
 
-The likelihood, or the probability of predictor given the class, is assumed to be Gaussian, and is calculated based on mean and standard deviation *(see formula on step 4)*. Let's create a summary for each feature in the data set.
+The likelihood, or the probability of predictor given the class, is assumed to be Gaussian and is calculated based on mean and standard deviation *(see formula on step 4)*. Let's create a summary for each feature in the data set.
 
 ```python
 def summarize(self, X):
@@ -67,7 +67,7 @@ def summarize(self, X):
 
 * The `zip()` function here is an iterator of tuples where the values are paired together for each feature.
 * We choose to `yield` because we want to produce a sequence of values over which we will iterate later on, without explicitly saving the sequence in memory.  
-#  
+  
 
 ### 4. Gaussian distribution function
 
@@ -82,7 +82,7 @@ def gauss_distribution_function(self, x, mean, stdev):
     exponent = np.exp(-((x-mean)**2 / (2*stdev**2)))
     return exponent / (np.sqrt(2*np.pi)*stdev)
 ```  
-#  
+  
 
 ### 5. Train the model
 
@@ -101,7 +101,7 @@ def fit(self, X, y):
 ```
 
 First, we separate the classes in the training data set. Then, calculate the mean and standard deviation for each class, as well as the prior probability of the class: `len(feature_values)/len(X)`.  
-#  
+  
 
 ### 6. Predict
 
@@ -160,7 +160,7 @@ def predict(self, X):
         MAPs.append(MAP)
     return MAPs
 ```  
-#  
+  
 
 ### 7. Calculate the accuracy
 
@@ -174,7 +174,7 @@ def accuracy(self, y_test, y_pred):
             true_true += 1
     return true_true / len(y_test)
 ```  
-#  
+  
 
 ### GaussianNBClassifier vs. sklearn GaussianNB
 
@@ -212,7 +212,7 @@ Scikit-learn GaussianNB accuracy: 0.972
 The accuracy of the models is the same, meaning that we implemented successful a Gaussian Naive Bayes model from scratch.
 
 Find [here](https://github.com/doinalangille/Naive-Bayes-from-scratch) the entire code and the notebook with the comparison of the algorithms.  
-#  
+  
 
 ### References
 * [6 Easy Steps to Learn Naive Bayes Algorithm with codes in Python and R](https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/)
