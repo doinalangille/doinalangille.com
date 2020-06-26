@@ -2,14 +2,14 @@
 layout: post
 title: Naive Bayes Classifier From Scratch
 subtitle: A better understanding of the algorithm
-image: /img/groups.jpg
+image: /img/naive-bayes/groups.jpg
 tags: [Naive Bayes, model, classifier, python]
 comments: true
 ---
 
 The Naive Bayes algorithm is a classification technique based on Bayes Theorem. It assumes that a feature in a class is unrelated to the presence of any other feature. The algorithm relies on the posterior probability of the class given a predictor, as shown in the following formula:
 
-![posterior_proba](http://www.sciweavers.org/tex2img.php?eq=P%28c%7Cx%29%3D%5Cfrac%7BP%28x%7Cc%29%2AP%28c%29%7D%7BP%28x%29%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![posterior_proba](/img/naive-bayes/posterior_proba.JPG)
 
 where:
 * P(c\|x) - the posterior probability of class $$c$$ given a predictor $$x$$
@@ -109,7 +109,7 @@ To predict a class, we have to calculate the posterior probability for each one.
 
 The joint probability is the numerator of the fraction used to calculate the posterior probability. Having multiple features, the joint probability is:
 
-![joint_proba](http://www.sciweavers.org/tex2img.php?eq=P%28y%29%5Cprod_%7Bi%3D1%7D%5E%7Bn%7DP%28x_i%7Cy%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![joint_proba](/img/naive-bayes/joint_proba.JPG)
 
 ```python
 joint_proba = {}
