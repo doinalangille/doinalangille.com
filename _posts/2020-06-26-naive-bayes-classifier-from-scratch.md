@@ -75,8 +75,6 @@ The likelihood for features following a normal distribution is calculated using 
 
 ![likelihood](https://bit.ly/38aClFN)
 
-$$P(x_i|y) = \frac{1}{\sqrt{2\pi\sigma^2}}*\exp{(-\frac{(x_i - \mu)^2}{2\sigma^2})}$$
-
 ```python
 def gauss_distribution_function(self, x, mean, stdev):
     exponent = np.exp(-((x-mean)**2 / (2*stdev**2)))
@@ -86,7 +84,7 @@ def gauss_distribution_function(self, x, mean, stdev):
 
 ### 5. Train the model
 
-Training the model means telling the model to learn from a dataset. In Gaussian Bayes classifier, training means calculating the mean and standard deviation for each feature of each class. This will allow to calculate the likelihoods to be used for predictions.
+Training the model means telling the model to learn from a dataset. In the Gaussian Bayes classifier, training involves calculating the mean and standard deviation for each feature of each class. This will allow us to calculate the likelihoods to be used for predictions.
 
 ```python
 def fit(self, X, y):
@@ -100,15 +98,15 @@ def fit(self, X, y):
     return self.class_summary
 ```
 
-First, we separate the classes in the training data set. Then, calculate the mean and standard deviation for each class, as well as the prior probability of the class: `len(feature_values)/len(X)`.  
+First, we separate the classes in the training data set. Then, calculate the mean and standard deviation for each class and the prior probability of the class: `len(feature_values)/len(X)`.  
   
 
 ### 6. Predict
 
-To predict a class, we have to calculate the posterior probability for each one. The class with the greatest posterior probability will be the predicted class. The posterior probability is the joint probability divided by the marginal probability. The marginal probability, or the denominator, is the total joint probability of all classess, and will be the same across all classes. We need the class with the greatest posterior probability, which means it will be the one with greatest joint probability.
+To predict a class, we have to calculate the posterior probability for each one. The class with the highest posterior probability will be the predicted class. The posterior probability is the joint probability divided by the marginal probability. The marginal probability, or the denominator, is the total joint probability of all classes and will be the same across all classes. We need the class with the highest posterior probability, which means it will be the greatest joint probability.
 
 **Joint probability**
-Joint probability is the numerator of the fraction used to calculate the posterior probability. Having multiple features, the joint probability is:
+The joint probability is the numerator of the fraction used to calculate the posterior probability. Having multiple features, the joint probability is:
 
 ![joint_proba](https://bit.ly/2YAIUhJ)
 
@@ -128,10 +126,10 @@ for class_name, features in self.class_summary.items():
 ```
 
 For each class:
-* get the summary (mean, standard deviation, and prior probability)
-* calculate the Normal Probability of each feature
-* get the total likelihood (the product of all normal probabilities)
-* get the joint probability by multiplying the prior probability with the total likelihood.
+* Get the summary (mean, standard deviation, and prior probability)
+* Calculate the Normal Probability of each feature
+* Get the total likelihood (the product of all normal probabilities)
+* Get the joint probability by multiplying the prior probability with the total likelihood.
 
 **Predict the class**
 After having the joint probability of each class, we can select the class with the maximum value for the joint probability: `max(joint_proba, key=joint_proba.get)`.
@@ -164,7 +162,7 @@ def predict(self, X):
 
 ### 7. Calculate the accuracy
 
-To test the performance of the model, we divide the number of correct predictions by the total number of predictions. This is also known as **accuracy**.
+To test the model's performance, we divide the number of correct predictions by the total number of predictions. This is also known as **accuracy**.
 
 ```python
 def accuracy(self, y_test, y_pred):
@@ -178,7 +176,7 @@ def accuracy(self, y_test, y_pred):
 
 ### GaussianNBClassifier vs. sklearn GaussianNB
 
-Let's use the [UCI Wine data set](https://archive.ics.uci.edu/ml/datasets/Wine) to compare the performance of our model with the performance of GaussianNB model from scikit-learn.
+Let's use the [UCI Wine data set](https://archive.ics.uci.edu/ml/datasets/Wine) to compare our model's performance with the performance of the GaussianNB model from scikit-learn.
 
 **GaussianNBClassifier**
 ```python
@@ -209,7 +207,7 @@ Output:
 Scikit-learn GaussianNB accuracy: 0.972
 ```
 
-The accuracy of the models is the same, meaning that we implemented successful a Gaussian Naive Bayes model from scratch.
+The accuracy of the models is the same, meaning that we implemented a successful Gaussian Naive Bayes model from scratch.
 
 Find [here](https://github.com/doinalangille/Naive-Bayes-from-scratch) the entire code and the notebook with the comparison of the algorithms.  
   
