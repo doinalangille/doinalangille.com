@@ -21,6 +21,8 @@ The Naive Bayes classifier is easy to implement and performs well even with a sm
 
 The best way to understand a model is to build one from scratch. All the following methods are defined in a `GaussianNBClassifier` class. Let's have some fun!
 
+&nbsp  
+
 ### 1. Instantiate the class
 
 We will use only the `numpy` library for the arithmetical operations.
@@ -32,7 +34,8 @@ class GaussianNBClassifier:
     def __init__(self):
         pass
 ```
-  
+
+&nbsp  
 
 ### 2. Separate classes
 
@@ -49,7 +52,8 @@ def separate_classes(self, X, y):
         separated_classes[class_name].append(feature_values)
     return separated_classes
 ```
-  
+
+&nbsp  
 
 ### 3. Summary of features
 
@@ -66,7 +70,8 @@ def summarize(self, X):
 
 * The `zip()` function here is an iterator of tuples where the values are paired together for each feature.
 * We choose to `yield` because we want to produce a sequence of values over which we will iterate later on, without explicitly saving the sequence in memory.
-  
+
+&nbsp  
 
 ### 4. Gaussian distribution function
 
@@ -81,7 +86,8 @@ def gauss_distribution_function(self, x, mean, stdev):
     exponent = np.exp(-((x-mean)**2 / (2*stdev**2)))
     return exponent / (np.sqrt(2*np.pi)*stdev)
 ```
-  
+
+&nbsp  
 
 ### 5. Train the model
 
@@ -100,7 +106,8 @@ def fit(self, X, y):
 ```
 
 First, we separate the classes in the training data set. Then, calculate the mean and standard deviation for each class, as well as the prior probability of the class: `len(feature_values)/len(X)`.
-  
+
+&nbsp  
 
 ### 6. Predict
 
@@ -159,7 +166,8 @@ def predict(self, X):
         MAPs.append(MAP)
     return MAPs
 ```
-  
+
+&nbsp  
 
 ### 7. Calculate the accuracy
 
@@ -173,7 +181,8 @@ def accuracy(self, y_test, y_pred):
             true_true += 1
     return true_true / len(y_test)
 ```
-  
+
+&nbsp  
 
 ### GaussianNBClassifier vs. sklearn GaussianNB
 
@@ -192,7 +201,8 @@ Output:
 ```
 GaussianNBClassifier accuracy: 0.972
 ```
-  
+
+&nbsp  
 
 **Scikit-learn GaussianNB**
 ```python
@@ -212,7 +222,8 @@ Scikit-learn GaussianNB accuracy: 0.972
 The accuracy of the models is the same, meaning that we implemented successful a Gaussian Naive Bayes model from scratch.
 
 Find [here](https://github.com/doinalangille/Naive-Bayes-from-scratch) the entire code and the notebook with the comparison of the algorithms.
-  
+
+&nbsp  
 
 ### References
 * [6 Easy Steps to Learn Naive Bayes Algorithm with codes in Python and R](https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/)
