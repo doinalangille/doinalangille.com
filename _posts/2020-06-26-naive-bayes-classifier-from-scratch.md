@@ -12,8 +12,8 @@ The Naive Bayes algorithm is a classification technique based on Bayes Theorem. 
 ![posterior_proba](/img/naive-bayes/posterior_proba.JPG)
 
 where:
-* P(c\|x) - the posterior probability of class $$c$$ given a predictor $$x$$
-* P(x\|c) - the probability of the predictor $$x$$ given the class $$c$$. Also known as Likelihood
+* P(c\|x) - the posterior probability of class given a predictor
+* P(x\|c) - the probability of the predictor given the class. Also known as Likelihood
 * P(c) - the prior probability of the class
 * P(x) - the prior probability of predictor.
 
@@ -73,7 +73,7 @@ def summarize(self, X):
 
 The likelihood for features following a normal distribution is calculated using the Gaussian distribution function:
 
-![likelihood](https://bit.ly/38aClFN)
+![likelihood](/img/naive-bayes/likelihood.JPG)
 
 ```python
 def gauss_distribution_function(self, x, mean, stdev):
@@ -188,7 +188,7 @@ from GaussianNBClassifier import GaussianNBClassifier
 model = GaussianNBClassifier()
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
-model.accuracy(y_test, y_pred)
+print ("GaussianNBClassifier accuracy: {0:.3f}".format(model.accuracy(y_test, y_pred)))
 ```
 Output:
 ```
