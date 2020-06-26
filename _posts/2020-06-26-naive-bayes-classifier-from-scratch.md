@@ -106,6 +106,7 @@ First, we separate the classes in the training data set. Then, calculate the mea
 To predict a class, we have to calculate the posterior probability for each one. The class with the highest posterior probability will be the predicted class. The posterior probability is the joint probability divided by the marginal probability. The marginal probability, or the denominator, is the total joint probability of all classes and will be the same across all classes. We need the class with the highest posterior probability, which means it will be the greatest joint probability.
 
 **Joint probability**
+
 The joint probability is the numerator of the fraction used to calculate the posterior probability. Having multiple features, the joint probability is:
 
 ![joint_proba](https://bit.ly/2YAIUhJ)
@@ -132,9 +133,11 @@ For each class:
 * Get the joint probability by multiplying the prior probability with the total likelihood.
 
 **Predict the class**
+
 After having the joint probability of each class, we can select the class with the maximum value for the joint probability: `max(joint_proba, key=joint_proba.get)`.
 
 **Put it all together**
+
 Finally, we can predict the class for each row in a test data set, as follows:
 
 ```python
