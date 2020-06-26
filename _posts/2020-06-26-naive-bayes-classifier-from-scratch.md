@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Naive Bayes Classifier From Scratch
-subtitle: A deep understanding of the algorithm
+subtitle: A better understanding of the algorithm
 image: /img/groups.jpg
 tags: [Naive Bayes, model, classifier, python]
 comments: true
@@ -9,16 +9,15 @@ comments: true
 
 The Naive Bayes algorithm is a classification technique based on Bayes Theorem. It assumes that the presence of a feature in a class is unrelated to the presence on any other feature. The algorithm rely on the posterior probability of the class given a predictor, as we can see in the following formula:
 
-[posterior_proba]https://bit.ly/2YBQuZs[/posterior_proba]
+![posterior_proba](https://bit.ly/2YBQuZs)
 
 $$P(c|x) = \frac{P(x|c)*P(c)}{P(x)}$$
 
 where:
-
-$$P(c|x)$$ - the posterior probability of class $$c$$ given a predictor $$x$$
-$$P(x|c)$$ - the probability of the predictor $$x$$ given the class $$c$$. Also known as Likelihood
-$$P(c)$$ - the prior probability of the class
-$$P(x)$$ - the prior probability of predictor.
+* P(c|x) - the posterior probability of class $$c$$ given a predictor $$x$$
+* P(x|c) - the probability of the predictor $$x$$ given the class $$c$$. Also known as Likelihood
+* P(c) - the prior probability of the class
+* P(x) - the prior probability of predictor.
 
 The Naive Bayes classifier is easy to implement and performs well even with a small training data set. It is one of the best fast solutions when it comes to predict the class of the data. [Scikit-learn](https://scikit-learn.org/stable/modules/naive_bayes.html) offers different algorithms for different type of problems. One of them is the **Gaussian Naive Bayes**. It is used when the features are continuous variables and it assumes that the features follow a Gaussian distribution. It is extremely easy to apply the open-source model on data, but a good analyst has to understand how the model is built, so that he can apply it on the appropriate data.
 
@@ -75,7 +74,7 @@ def summarize(self, X):
 
 The likelihood for features following a normal distribution is calculated using the Gaussian distribution function:
 
-[likelihood]https://bit.ly/38aClFN[/likelihood]
+![likelihood](https://bit.ly/38aClFN)
 
 $$P(x_i|y) = \frac{1}{\sqrt{2\pi\sigma^2}}*\exp{(-\frac{(x_i - \mu)^2}{2\sigma^2})}$$
 
@@ -113,7 +112,7 @@ To predict a class, we have to calculate the posterior probability for each one.
 
 Joint probability is the numerator of the fraction used to calculate the posterior probability. Having multiple features, the joint probability is:
 
-[joint_proba]https://bit.ly/2YAIUhJ[/joint_proba]
+![joint_proba](https://bit.ly/2YAIUhJ)
 
 $$P(y)\prod_{i=1}^{n}P(x_i|y)$$.
 
