@@ -38,18 +38,18 @@ Data Mining \| Time Series Analysis \| Statistics \| Econometrics \| Databases
 
 **Consultant**  
 KPMG Advisory, Romania, Jan 2018 - Jun 2019  
-*- Validated credit risk models*
+*- Validated the accuracy and consistency of credit risk models for banks, following Basel requirement*
+*- Performed statistical tests on the model’s stability,  segmentation, screening capacity, and concentration*
 
 
 **Statistician**  
 ASCEDO International, Romania, Jan - Sep 2017  
-*- Built questionnaires, wrangled the raw data, and analyzed surveys’ responses*  
-*- Built reports to support strategies of development for schools and hospitals*
+*- Built questionnaires, wrangled the raw data, and analyzed surveys’ responses, in order to create reports  to support strategies of development for schools and hospitals*  
 
 
 **Vice-President**  
 The Club of Applied Statistics, Romania, Oct 2015 - Jun 2016  
-*- Managed a team of 20 students on performing research studies about the behavior of college students*
+*- Managed a team of 20 people performing research studies about students’ behavior*
 
 
 # Languages
