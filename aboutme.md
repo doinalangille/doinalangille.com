@@ -39,6 +39,7 @@ Data Mining \| Time Series Analysis \| Statistics \| Econometrics \| Databases
 **Consultant**  
 KPMG Advisory, Romania, Jan 2018 - Jun 2019  
 *- Validated the accuracy and consistency of credit risk models for banks, following Basel requirement*
+
 *- Performed statistical tests on the model’s stability,  segmentation, screening capacity, and concentration*
 
 
