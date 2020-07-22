@@ -28,8 +28,8 @@ subtitle:
 *2019-2020*  
 Statistics \| Predictive Modeling \| Data Engineering \| Machine Learning
 
-<img align="left" src="/img/about_me/feea.png" width="75"> **Faculty of Economics and Business Administration​, Romania**, *2014-2017*  
-**Bachelor:** Economic Statistics and Forecasting  
+<img align="left" src="/img/about_me/feea.png" width="75"> **Alexandru Ioan Cuza University, Romania**, *2014-2017*  
+**Bachelor's Degree:** Economic Statistics and Forecasting  
 Data Mining \| Time Series Analysis \| Statistics \| Econometrics \| Databases
 
 # Experience
