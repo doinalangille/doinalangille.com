@@ -20,8 +20,10 @@ url: "https://doinalangille.github.io"
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  Home: "_posts"
   Projects: "projects"
+  About Me: "aboutme"
+  
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
