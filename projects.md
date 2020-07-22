@@ -8,4 +8,4 @@ subtitle:
 :-: | :-:
 [Gróa](https://www.groa.us/) | [Online Shoppers Intention](https://online-shoppers-intention.herokuapp.com/)
 **A media personalization hub of unbiased and accurate movie recommendations** | **An app designed to predict the shopping intention of online users**
-*Python \| PostgreSQL \| AWS \| BeautifulSoup  Pandas \| Numpy \| Scikit-learn* | *Logistic Regression \| Python  Random Forest Classifier \| Dash*
+*Python \| PostgreSQL \| AWS \| BeautifulSoup  Pandas \| Numpy \| Scikit-learn* | *Logistic Regression \| Python \| Dash Random Forest Classifier*
