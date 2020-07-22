@@ -9,7 +9,7 @@ subtitle:
 
 ---
 
-[<img align="left" src="/img/groa-logo.png" width="200">](https://www.groa.us/) **A media personalization hub of unbiased and accurate movie recommendations**
+[<img align="left" src="/img/groa-logo.png" width="300">](https://www.groa.us/) **A media personalization hub of unbiased and accurate movie recommendations**
 
 *Python \| PostgreSQL \| AWS \| BeautifulSoup \| Pandas \| Numpy \| Scikit-learn*
 * Redesigned and built a relational database
@@ -23,7 +23,7 @@ subtitle:
 
 ---
 
-[<img align="left" src="/img/online-shopper/homepage.jpg" width="200">](https://online-shoppers-intention.herokuapp.com/) **An app designed to predict the shopping intention of online users**
+[<img align="left" src="/img/online-shopper/homepage.jpg" width="300">](https://online-shoppers-intention.herokuapp.com/) **An app designed to predict the shopping intention of online users**
 
 *Logistic Regression \| Python \| Dash \| Random Forest Classifier*
 * Applied Random Forest Classifier to predict online shoppers’ intention
