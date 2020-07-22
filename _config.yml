@@ -20,7 +20,6 @@ url: "https://doinalangille.github.io"
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "_posts"
   Projects: "projects"
   About Me: "aboutme"
   
